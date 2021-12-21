@@ -79,6 +79,7 @@ btnRoll.addEventListener('click', function () {
       // switch to next player
 
       switchPlayer();
+      diceEl.classList.add('hidden')
 
     }
   }
@@ -90,6 +91,7 @@ btnHold.addEventListener('click', function () {
     // score[1] = scores[1] + currentScore
     document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer]
     currentScore = 0
+    diceEl.classList.add('hidden')
 
 
 
